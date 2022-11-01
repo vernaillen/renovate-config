@@ -1,8 +1,8 @@
 repository:
   name: renovate-config
-  description: TELUS preset configs for Renovate
+  description: vernaillen preset configs for Renovate
   topics: renovate,config
-  homepage: https://telus.com/digital
+  homepage: https://vernaillen.dev
   private: false
   has_issues: true
   has_wiki: false

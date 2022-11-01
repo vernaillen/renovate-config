@@ -1,15 +1,15 @@
 {
   "version": "0.0.0-development",
-  "name": "@telus/renovate-config",
-  "description": "TELUS preset configs for Renovate",
-  "homepage": "https://github.com/telus/renovate-config",
+  "name": "@vernaillen/renovate-config",
+  "description": "vernaillen preset configs for Renovate",
+  "homepage": "https://github.com/vernaillen/renovate-config",
   "repository": {
     "type": "git",
-    "url": "https://github.com/telus/renovate-config.git"
+    "url": "https://github.com/vernaillen/renovate-config.git"
   },
   "license": "MIT",
   "main": "index.js",
-  "keywords": ["telus","renovate","config"],
+  "keywords": ["vernaillen","renovate","config"],
   "engines": {
     "node": ">=8"
   },
@@ -18,7 +18,7 @@
     "index.js"
   ],
   "bugs": {
-    "url": "https://github.com/telus/renovate-config/issues"
+    "url": "https://github.com/vernaillen/renovate-config/issues"
   },
   "scripts": {
     "lint:ec": "npx editorconfig-checker .",
@@ -36,7 +36,7 @@
         "default:preserveSemverRanges",
         "default:prConcurrentLimitNone",
         "default:prHourlyLimitNone",
-        "default:timezone(America/Vancouver)",
+        "default:timezone(Europe/Brussels)",
         "default:label(dependencies)"
       ],
       "lockFileMaintenance": {
