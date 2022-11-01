@@ -9,7 +9,11 @@
   },
   "license": "MIT",
   "main": "index.js",
-  "keywords": ["vernaillen","renovate","config"],
+  "keywords": [
+    "vernaillen",
+    "renovate",
+    "config"
+  ],
   "engines": {
     "node": ">=8"
   },
@@ -21,9 +25,9 @@
     "url": "https://github.com/vernaillen/renovate-config/issues"
   },
   "scripts": {
-    "lint:ec": "npx editorconfig-checker .",
+    "lint:ec": "npx editorconfig-checker --config .editorconfig",
     "lint:md": "npx remark --quiet --frail .",
-    "lint": "npx npm-run-all -p lint:*"
+    "lint": "npm-run-all -p lint:*"
   },
   "renovate-config": {
     "default": {
@@ -43,12 +47,20 @@
         "enabled": false
       },
       "vulnerabilityAlerts": {
-        "labels": ["security"]
+        "labels": [
+          "security"
+        ]
       },
       "ignoreNpmrcFile": true,
       "encrypted": {
         "npmToken": "wcFMA/xDdHCJBTolAQ/+KbThbD0IZhyKuACQ2GIB9s5H5nJWSBD25NB+8xzKa7pm1ur94JIm8hi0ooQYEj8VLx2b8rwgUGvCqS0FBZz74uhX/UOHFvuRbIFQNRRc8Q5IzJuTy693i0BfFhMQdwUgCAC8zfcvtyf5Qww+xKR/pvtEuiNAMisdkq2FkAAnMOREpEbMCOzbNjjrUDnfpl8GCqU8I/Qid1jYlWSfXGOZuYRFDx+XZm2pZH0ak8nN/F6xUfHpAsl4WNG7wf8hRsDUNLtm6xQFMKryU1Ps7bW6oTaa+KvqhtlcoqNeuseAfkxqFFZwyNq0+aezYyUJNcChIlxSmh5OLXNfm7t6VFAWIThEtNfa48yYxocqLpkJIXDEChJ90PtNjZQaZT3WFCOZInQdUC8fvTrERxbOf0h9US1UuXLhMNOlmwm3B51E8MykH21h8TMOuQ00ukg5AMXjDvGrK6VYo0pOOFW/S8VImPRX9K6JNDrv2nt5fKrXEnTdHYSt7HgT5CsucUiIqsEfX4Yp283NGkUazrDJkkxq5hIYW8ujZvV7hmtszBoJMjamNbTfAI8tFK8pHZGl9VrTHMAeRhqqNKDKu6vpcNppkJAYDCvV9Zlnb1eSzDrDWOos0mTpAIpzRlAnWEEO9lQMseZsxKfbgpGrj5IUsBenOh33x/EfesPs5qerA5SqsADSdAGsxIr9iBobh2ngrB70QXR73euOhbRbHLZu1CWrMocGPIF3k6rPXj7up9gpyok3ZPlWTwb81ozZbqe6sAoMd0CCz6nNA3bYSkpH6kUzmDrijFtoNiNk+lNhSJywjd+jZE9eLp4KgDsX+UJ9uY5ALPyv30yN"
       }
     }
+  },
+  "devDependencies": {
+    "@telus/remark-config": "^2.2.4",
+    "editorconfig-checker": "^4.0.2",
+    "npm-run-all": "^4.1.5",
+    "remark-cli": "^11.0.0"
   }
 }

@@ -27,9 +27,6 @@ Review [Full configuration docs](https://renovatebot.com/docs/configuration-opti
 
 ---
 
-> Github: [@telus](https://github.com/telus) &bull;
-> Twitter: [@telusdigital](https://twitter.com/telusdigital)
-
 [circle-url]: https://circleci.com/gh/vernaillen/renovate-config
 [circle-image]: https://img.shields.io/circleci/project/github/vernaillen/renovate-config/master.svg?style=for-the-badge&logo=circleci
 
