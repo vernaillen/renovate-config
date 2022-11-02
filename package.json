@@ -1,5 +1,5 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.2",
   "name": "@vernaillen/renovate-config",
   "description": "vernaillen preset configs for Renovate",
   "homepage": "https://github.com/vernaillen/renovate-config",
@@ -33,7 +33,6 @@
     "default": {
       "extends": [
         "config:base",
-        "schedule:weekly",
         "default:pinDigestsDisabled",
         "default:separatePatchReleases",
         "default:semanticCommits",
