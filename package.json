@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "name": "@vernaillen/renovate-config",
   "description": "vernaillen preset configs for Renovate",
   "homepage": "https://github.com/vernaillen/renovate-config",
@@ -48,6 +48,15 @@
             "*"
           ],
           "rangeStrategy": "replace"
+        },
+        {
+          "matchDatasources": [
+            "docker"
+          ],
+          "matchPackageNames": [
+            "vernaillen/circleci-pnpm"
+          ],
+          "allowedVersions": "<=18"
         }
       ],
       "lockFileMaintenance": {
