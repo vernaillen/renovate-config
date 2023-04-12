@@ -1,5 +1,5 @@
 {
-  "version": "1.0.5",
+  "version": "1.0.6",
   "name": "@vernaillen/renovate-config",
   "description": "vernaillen preset configs for Renovate",
   "homepage": "https://github.com/vernaillen/renovate-config",
@@ -25,22 +25,14 @@
     "url": "https://github.com/vernaillen/renovate-config/issues"
   },
   "scripts": {
-    "lint:ec": "npx editorconfig-checker --config .editorconfig",
-    "lint:md": "npx remark --quiet --frail .",
-    "lint": "npm-run-all -p lint:*"
+    "lint": "npx editorconfig-checker --config .editorconfig"
   },
   "renovate-config": {
     "default": {
       "extends": [
         "config:base",
-        "default:pinDigestsDisabled",
-        "default:separatePatchReleases",
-        "default:semanticCommits",
-        "default:preserveSemverRanges",
-        "default:prConcurrentLimitNone",
-        "default:prHourlyLimitNone",
-        "default:timezone(Europe/Brussels)",
-        "default:label(dependencies)"
+        "group:allNonMajor",
+        ":semanticCommitTypeAll(chore)"
       ],
       "packageRules": [
         {
@@ -70,9 +62,6 @@
     }
   },
   "devDependencies": {
-    "@telus/remark-config": "^2.2.4",
-    "editorconfig-checker": "^4.0.2",
-    "npm-run-all": "^4.1.5",
-    "remark-cli": "^11.0.0"
+    "editorconfig-checker": "^5.0.1"
   }
 }
