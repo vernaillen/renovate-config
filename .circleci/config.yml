@@ -14,7 +14,7 @@ jobs:
           name: Install packages
           command: pnpm install
       - run:
-          name: Build
+          name: Lint
           command: pnpm run lint
 
 workflows:
