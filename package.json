@@ -1,5 +1,5 @@
 {
-  "version": "1.0.6",
+  "version": "1.0.7",
   "name": "@vernaillen/renovate-config",
   "description": "vernaillen preset configs for Renovate",
   "homepage": "https://github.com/vernaillen/renovate-config",
@@ -25,7 +25,10 @@
     "url": "https://github.com/vernaillen/renovate-config/issues"
   },
   "scripts": {
-    "lint": "npx editorconfig-checker --config .editorconfig"
+    "lint": "npx editorconfig-checker --config .editorconfig",
+    "validate": "renovate-config-validator",
+    "test": "npm run lint && npm run validate",
+    "prepare": "npm run test"
   },
   "renovate-config": {
     "default": {
@@ -58,10 +61,11 @@
           "security"
         ]
       },
-      "ignoreNpmrcFile": true
+      "npmrc": ""
     }
   },
   "devDependencies": {
-    "editorconfig-checker": "^5.0.1"
+    "editorconfig-checker": "^5.0.1",
+    "renovate": "^35.41.1"
   }
 }

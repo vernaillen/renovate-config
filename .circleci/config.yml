@@ -6,7 +6,7 @@ executors:
       - image: vernaillen/circleci-pnpm:19.7.0-browsers
 
 jobs:
-  lint:
+  validate:
     executor: pnpm-executor
     steps:
       - checkout
@@ -16,9 +16,12 @@ jobs:
       - run:
           name: Lint
           command: pnpm run lint
+      - run:
+          name: Validate
+          command: pnpm run validate
 
 workflows:
   flow:
     jobs:
-      - lint
+      - validate
 
