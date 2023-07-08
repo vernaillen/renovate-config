@@ -3,7 +3,7 @@ version: 2.1
 executors:
   pnpm-executor:
     docker:
-      - image: vernaillen/circleci-pnpm:19.7.0-browsers
+      - image: cimg/node:20.4.0-browsers
 
 jobs:
   validate:
