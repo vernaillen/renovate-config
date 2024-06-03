@@ -3,7 +3,7 @@ version: 2.1
 executors:
   pnpm-executor:
     docker:
-      - image: cimg/node:20.4.0-browsers
+      - image: cimg/node:20.14.0-browsers
 
 jobs:
   validate:
