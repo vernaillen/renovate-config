@@ -1,5 +1,5 @@
 {
-  "version": "1.0.13",
+  "version": "1.0.14",
   "name": "@vernaillen/renovate-config",
   "description": "vernaillen preset configs for Renovate",
   "homepage": "https://github.com/vernaillen/renovate-config",
