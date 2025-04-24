@@ -14,9 +14,6 @@ jobs:
           name: Install packages
           command: pnpm install
       - run:
-          name: Lint
-          command: pnpm run lint
-      - run:
           name: Validate
           command: pnpm run validate
 

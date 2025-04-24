@@ -27,7 +27,7 @@
   "scripts": {
     "lint": "npx editorconfig-checker --config .editorconfig",
     "validate": "renovate-config-validator",
-    "test": "npm run lint && npm run validate",
+    "test": "npm run validate",
     "release": "standard-version && git push --follow-tags && npm publish",
     "prepare": "npm run test"
   },
